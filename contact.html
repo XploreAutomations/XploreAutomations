@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>XPLORE AUTOMATION | Project Inquiry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#d1dfe6",
+                        "surface-bright": "#262c36",
+                        "on-tertiary-container": "#4b595f",
+                        "tertiary-fixed": "#dfedf5",
+                        "error-dim": "#d7383b",
+                        "secondary-fixed": "#d5cbff",
+                        "background": "#0a0e14",
+                        "on-secondary-container": "#dbd2ff",
+                        "outline-variant": "#44484f",
+                        "on-primary-fixed": "#003f43",
+                        "primary": "#8ff5ff",
+                        "on-secondary-fixed-variant": "#5318e4",
+                        "on-error": "#490006",
+                        "primary-fixed-dim": "#00deec",
+                        "error-container": "#9f0519",
+                        "on-secondary": "#21006e",
+                        "secondary-container": "#4d07e0",
+                        "inverse-on-surface": "#51555c",
+                        "surface-tint": "#8ff5ff",
+                        "on-surface-variant": "#a8abb3",
+                        "on-secondary-fixed": "#3600a4",
+                        "on-primary": "#005d63",
+                        "tertiary-container": "#dfedf5",
+                        "on-primary-container": "#005359",
+                        "on-background": "#f1f3fc",
+                        "surface-container-highest": "#20262f",
+                        "secondary-fixed-dim": "#c8bbff",
+                        "primary-dim": "#00deec",
+                        "inverse-primary": "#006a71",
+                        "surface-container": "#151a21",
+                        "on-tertiary-fixed": "#39474c",
+                        "surface": "#0a0e14",
+                        "primary-container": "#00eefc",
+                        "surface-variant": "#20262f",
+                        "on-tertiary": "#546167",
+                        "surface-dim": "#0a0e14",
+                        "inverse-surface": "#f8f9ff",
+                        "surface-container-high": "#1b2028",
+                        "secondary": "#a28dff",
+                        "on-surface": "#f1f3fc",
+                        "tertiary-dim": "#d1dfe6",
+                        "on-primary-fixed-variant": "#005e64",
+                        "secondary-dim": "#7854ff",
+                        "on-tertiary-fixed-variant": "#556369",
+                        "tertiary": "#f3faff",
+                        "surface-container-low": "#0f141a",
+                        "on-error-container": "#ffa8a3",
+                        "outline": "#72757d",
+                        "error": "#ff716c",
+                        "surface-container-lowest": "#000000",
+                        "primary-fixed": "#00eefc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .geometric-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(143, 245, 255, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .glass-panel {
+            background: rgba(21, 26, 33, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary-fixed overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<nav class="bg-slate-950/60 backdrop-blur-xl fixed top-0 w-full z-50 shadow-[0_0_20px_rgba(143,245,255,0.05)] h-20">
+<div class="flex justify-between items-center px-8 h-full w-full max-w-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-cyan-400 text-3xl">terminal</span>
+<span class="text-2xl font-bold tracking-tighter text-slate-50 font-['Space_Grotesk']">XPLORE</span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-['Inter'] text-xs uppercase tracking-[0.2em]">
+<a class="text-slate-400 hover:text-slate-100 transition-all duration-300" href="#">EXPLORE</a>
+<a class="text-slate-400 hover:text-slate-100 transition-all duration-300" href="#">SYSTEMS</a>
+<a class="text-cyan-400 font-bold border-b-2 border-cyan-400 pb-1" href="#">INQUIRY</a>
+<a class="text-slate-400 hover:text-slate-100 transition-all duration-300" href="#">PROTOCOLS</a>
+</div>
+<button class="bg-primary/10 border border-primary/20 text-cyan-400 px-6 py-2 font-['Space_Grotesk'] font-bold text-sm tracking-tight hover:bg-primary/20 transition-all active:scale-95">
+                LAUNCH CONSOLE
+            </button>
+</div>
+</nav>
+<!-- Main Inquiry Portal -->
+<main class="min-h-screen pt-32 pb-20 relative flex flex-col items-center justify-center geometric-bg px-4 overflow-hidden">
+<!-- Abstract Glow Elements -->
+<div class="absolute top-1/4 -left-20 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute bottom-1/4 -right-20 w-80 h-80 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+<!-- Headline Section -->
+<div class="w-full max-w-4xl text-left mb-12">
+<div class="inline-flex items-center gap-2 mb-4">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+<span class="font-label text-[10px] uppercase tracking-[0.4em] text-primary-fixed-dim">Project Initiation Phase</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-bold leading-tight tracking-tighter text-on-background mb-6">
+                Start Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Journey.</span>
+</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                Connect with our core intelligence unit. Describe your automation requirements and initiate the onboarding sequence for the XPLORE ecosystem.
+            </p>
+</div>
+<!-- Central Inquiry Form (Glassmorphism) -->
+<section class="w-full max-w-4xl glass-panel border border-outline-variant/20 p-8 md:p-12 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="material-symbols-outlined text-outline-variant/30 text-8xl select-none" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+<!-- Description Field (Full Width) -->
+<div class="md:col-span-2 space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant flex items-center justify-between">
+                        Brief Project Description
+                        <span class="text-primary/40">MANDATORY</span>
+</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-lg p-4 font-body text-on-surface focus:ring-1 focus:ring-primary/50 placeholder:text-outline transition-all resize-none" placeholder="Define the scope of your automation requirements..." rows="4"></textarea>
+</div>
+<!-- Email Input -->
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">
+                        Secure Email Protocol
+                    </label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant group-focus-within:text-primary transition-colors text-xl">alternate_email</span>
+<input class="w-full bg-surface-container-high border-none rounded-lg pl-12 pr-4 py-4 font-body text-on-surface focus:ring-1 focus:ring-primary/50 placeholder:text-outline transition-all" placeholder="user@network.com" type="email"/>
+</div>
+</div>
+<!-- Contact Number Input -->
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">
+                        Direct Comm Link
+                    </label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant group-focus-within:text-primary transition-colors text-xl">dock_to_left</span>
+<input class="w-full bg-surface-container-high border-none rounded-lg pl-12 pr-4 py-4 font-body text-on-surface focus:ring-1 focus:ring-primary/50 placeholder:text-outline transition-all" placeholder="+00 (0) 000 000 000" type="tel"/>
+</div>
+</div>
+<!-- Information Modules (Asymmetric Bento style) -->
+<div class="md:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+<div class="bg-surface-container-lowest/50 p-6 rounded-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-3">lock</span>
+<h4 class="font-headline text-sm font-bold tracking-tight mb-1">Encrypted</h4>
+<p class="text-[11px] text-on-surface-variant leading-relaxed">End-to-end encryption on all transmitted project data.</p>
+</div>
+<div class="bg-surface-container-lowest/50 p-6 rounded-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-secondary mb-3">bolt</span>
+<h4 class="font-headline text-sm font-bold tracking-tight mb-1">Rapid Sync</h4>
+<p class="text-[11px] text-on-surface-variant leading-relaxed">Intelligence analysis response within 24 hours.</p>
+</div>
+<div class="bg-surface-container-lowest/50 p-6 rounded-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary-fixed-dim mb-3">hub</span>
+<h4 class="font-headline text-sm font-bold tracking-tight mb-1">Global Access</h4>
+<p class="text-[11px] text-on-surface-variant leading-relaxed">Multi-regional deployment support for any infrastructure.</p>
+</div>
+</div>
+<!-- Submit Button with Heavy Glow -->
+<div class="md:col-span-2 flex justify-end mt-4">
+<button class="group relative px-12 py-5 bg-gradient-to-r from-primary to-secondary rounded-lg font-headline font-bold text-on-primary-fixed tracking-tight hover:scale-105 active:scale-95 transition-all duration-300" type="submit">
+<!-- Heavy Glow Effect -->
+<div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-2xl opacity-40 group-hover:opacity-70 transition-opacity"></div>
+<span class="relative z-10 flex items-center gap-3">
+                            SUBMIT INQUIRY
+                            <span class="material-symbols-outlined text-xl">send</span>
+</span>
+</button>
+</div>
+</form>
+</section>
+<!-- Auxiliary Graphics -->
+<div class="w-full max-w-4xl mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="rounded-xl overflow-hidden aspect-video border border-outline-variant/20 grayscale hover:grayscale-0 transition-all duration-700 cursor-crosshair">
+<img class="w-full h-full object-cover" data-alt="Futuristic high-tech control room with glowing blue digital interfaces and schematic data projections in a dark dark minimalist setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE0OPQeHIF4a9e7ilYuePgrjIT5VER7qYlCGPizoyWhOwrETijyZ_R-dMQbZirlbWxNiz0B8g4UuqJlKBfeH0LGqNLPQiMTf_SW1YFW7YWNE62_85ZSEguZSnP180l0BCuQvDYlAcT974voARklfSyPpAn9q8K8IDe7-bxF9QwAsq1ckKPtnKFrQR4nKhR4Midj7pE4KPAdwQNGZFgr2aJt3qpeAaYzCEUyjSO1rE_EwVn7hb9OjoCLQVbU_QZqVtX1P39WEM7VQ"/>
+</div>
+<div class="space-y-6">
+<div class="space-y-1">
+<span class="font-label text-[10px] text-primary tracking-[0.2em] font-bold">CORE LOCATIONS</span>
+<h3 class="font-headline text-2xl font-bold tracking-tighter">Global Deployment Hubs</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 group cursor-pointer">
+<div class="h-[1px] w-8 bg-outline-variant group-hover:w-12 group-hover:bg-primary transition-all"></div>
+<span class="font-label text-xs tracking-widest text-on-surface-variant group-hover:text-on-background">NEO TOKYO NODE - 35.6762° N</span>
+</li>
+<li class="flex items-center gap-4 group cursor-pointer">
+<div class="h-[1px] w-8 bg-outline-variant group-hover:w-12 group-hover:bg-primary transition-all"></div>
+<span class="font-label text-xs tracking-widest text-on-surface-variant group-hover:text-on-background">BERLIN CORE - 52.5200° N</span>
+</li>
+<li class="flex items-center gap-4 group cursor-pointer">
+<div class="h-[1px] w-8 bg-outline-variant group-hover:w-12 group-hover:bg-primary transition-all"></div>
+<span class="font-label text-xs tracking-widest text-on-surface-variant group-hover:text-on-background">SILICON VALLEY EDGE - 37.4419° N</span>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-slate-950 w-full py-12 px-8 border-t border-slate-800/50">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-6">
+<span class="font-['Space_Grotesk'] font-black text-cyan-400 text-xl tracking-tighter">XPLORE</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-[0.2em] text-slate-500">© 2024 XPLORE AUTOMATION. ALL RIGHTS RESERVED.</span>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Inter'] text-[10px] uppercase tracking-[0.2em]">
+<a class="text-slate-500 hover:text-cyan-400 hover:tracking-widest transition-all duration-500" href="#">SYSTEM STATUS</a>
+<a class="text-slate-500 hover:text-cyan-400 hover:tracking-widest transition-all duration-500" href="#">API DOCS</a>
+<a class="text-slate-500 hover:text-cyan-400 hover:tracking-widest transition-all duration-500" href="#">PRIVACY PROTOCOL</a>
+<a class="text-slate-500 hover:text-cyan-400 hover:tracking-widest transition-all duration-500" href="#">SECURITY</a>
+</div>
+</div>
+</footer>
+</body></html>

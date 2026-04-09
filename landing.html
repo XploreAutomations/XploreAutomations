@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>XPLORE AUTOMATION | The Orchestrated Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#d1dfe6",
+                    "surface-bright": "#262c36",
+                    "on-tertiary-container": "#4b595f",
+                    "tertiary-fixed": "#dfedf5",
+                    "error-dim": "#d7383b",
+                    "secondary-fixed": "#d5cbff",
+                    "background": "#0a0e14",
+                    "on-secondary-container": "#dbd2ff",
+                    "outline-variant": "#44484f",
+                    "on-primary-fixed": "#003f43",
+                    "primary": "#8ff5ff",
+                    "on-secondary-fixed-variant": "#5318e4",
+                    "on-error": "#490006",
+                    "primary-fixed-dim": "#00deec",
+                    "error-container": "#9f0519",
+                    "on-secondary": "#21006e",
+                    "secondary-container": "#4d07e0",
+                    "inverse-on-surface": "#51555c",
+                    "surface-tint": "#8ff5ff",
+                    "on-surface-variant": "#a8abb3",
+                    "on-secondary-fixed": "#3600a4",
+                    "on-primary": "#005d63",
+                    "tertiary-container": "#dfedf5",
+                    "on-primary-container": "#005359",
+                    "on-background": "#f1f3fc",
+                    "surface-container-highest": "#20262f",
+                    "secondary-fixed-dim": "#c8bbff",
+                    "primary-dim": "#00deec",
+                    "inverse-primary": "#006a71",
+                    "surface-container": "#151a21",
+                    "on-tertiary-fixed": "#39474c",
+                    "surface": "#0a0e14",
+                    "primary-container": "#00eefc",
+                    "surface-variant": "#20262f",
+                    "on-tertiary": "#546167",
+                    "surface-dim": "#0a0e14",
+                    "inverse-surface": "#f8f9ff",
+                    "surface-container-high": "#1b2028",
+                    "secondary": "#a28dff",
+                    "on-surface": "#f1f3fc",
+                    "tertiary-dim": "#d1dfe6",
+                    "on-primary-fixed-variant": "#005e64",
+                    "secondary-dim": "#7854ff",
+                    "on-tertiary-fixed-variant": "#556369",
+                    "tertiary": "#f3faff",
+                    "surface-container-low": "#0f141a",
+                    "on-error-container": "#ffa8a3",
+                    "outline": "#72757d",
+                    "error": "#ff716c",
+                    "surface-container-lowest": "#000000",
+                    "primary-fixed": "#00eefc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Space Grotesk"
+                    ],
+                    "body": [
+                            "Inter"
+                    ],
+                    "label": [
+                            "Inter"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0a0e14;
+            color: #f1f3fc;
+            font-family: 'Inter', sans-serif;
+        }
+        .font-headline { font-family: 'Space Grotesk', sans-serif; }
+        .glass-panel {
+            background: rgba(21, 26, 33, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #8ff5ff 0%, #a28dff 100%);
+        }
+        .glow-cyan {
+            box-shadow: 0 0 20px rgba(143, 245, 255, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="selection:bg-primary selection:text-on-primary-fixed overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="bg-slate-950/60 backdrop-blur-xl fixed top-0 w-full z-50 shadow-[0_0_20px_rgba(143,245,255,0.05)]">
+<nav class="flex justify-between items-center px-8 h-20 w-full max-w-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-cyan-400 text-2xl" data-icon="terminal">terminal</span>
+<span class="text-2xl font-bold tracking-tighter text-slate-50 font-headline">XPLORE</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-cyan-400 font-bold border-b-2 border-cyan-400 font-headline text-sm tracking-widest transition-all duration-300" href="#">SOLUTIONS</a>
+<a class="text-slate-400 hover:text-slate-100 font-headline text-sm tracking-widest transition-all duration-300" href="#">NETWORK</a>
+<a class="text-slate-400 hover:text-slate-100 font-headline text-sm tracking-widest transition-all duration-300" href="#">TERMINAL</a>
+</div>
+<button class="signature-gradient text-on-primary-fixed font-headline font-bold px-6 py-2 rounded-md text-xs tracking-widest scale-95 active:scale-90 transition-all duration-300">
+                LAUNCH CONSOLE
+            </button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Cinematic Hero Section -->
+<section class="relative min-h-[795px] flex items-center px-8 lg:px-24 overflow-hidden bg-surface">
+<!-- Background Visualization -->
+<div class="absolute right-[-10%] top-0 w-3/4 h-full opacity-40 mix-blend-screen pointer-events-none">
+<div class="absolute inset-0 bg-gradient-to-l from-primary/20 to-transparent"></div>
+<img class="w-full h-full object-cover grayscale brightness-150 contrast-125" data-alt="Abstract 3D data visualization with glowing cyan and purple fiber optic lines swirling in deep space dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4dUp6Ec1J8qaweoy0vzEZOg598CKazeRNMuTNE27UyJal3fAjUHKblieC_wT5zvILuhioQojy5KCdbZry-wnRufyNzkHjwRtI0XgLCVzYWxmGoG3t-8XmqB_zRlaOM3cpbg_W7wgqKGxExao7rXvbk7N7hnnYCg4LifI1cdXTWNAbu0ly3mchH03nph61US1XVONNqsyeiH3cp9KDIlULSE_zE_RBwyAXE4yLy1JZ6cK4sX9NX-bq_1QvsKLI4MuKW1C2aXuhrQ"/>
+</div>
+<div class="relative z-10 max-w-4xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full mb-8 border border-outline-variant/15">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-[10px] font-bold tracking-[0.2em] text-on-surface-variant uppercase">System Active: V.4.0.2</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-black font-headline tracking-tighter leading-[0.9] mb-8 text-on-surface">
+                    THE ORCHESTRATED <br/>
+<span class="text-transparent bg-clip-text signature-gradient">INTELLIGENCE.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant font-body max-w-xl leading-relaxed mb-12">
+                    Xplore Automation builds the invisible architecture for the modern enterprise. We deploy high-performance agents that think, build, and scale autonomously.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="signature-gradient text-on-primary-fixed px-10 py-5 rounded-md font-headline font-bold tracking-widest hover:brightness-110 transition-all">
+                        DEPLOY PROTOCOL
+                    </button>
+<button class="bg-surface-container-high text-primary border border-outline-variant/20 px-10 py-5 rounded-md font-headline font-bold tracking-widest hover:bg-surface-bright transition-all">
+                        VIEW MANIFESTO
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bento Grid Features -->
+<section class="py-32 px-8 lg:px-24 bg-surface-container-low">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 max-w-7xl mx-auto">
+<!-- Web/App Dev (Featured) -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-highest rounded-xl p-10 border border-outline-variant/10 hover:border-primary/30 transition-all duration-500">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px]" data-icon="web_asset">web_asset</span>
+</div>
+<h3 class="text-label text-xs tracking-[0.3em] text-primary mb-4 font-bold">01 / ARCHITECTURE</h3>
+<h2 class="text-4xl font-bold font-headline mb-6 text-on-surface">Web &amp; Mobile <br/>Engineering.</h2>
+<p class="text-on-surface-variant font-body max-w-md mb-8">
+                        We build ultra-fast, data-driven interfaces that serve as the command center for your business operations. Reactive, secure, and infinitely scalable.
+                    </p>
+<div class="flex gap-4">
+<span class="px-3 py-1 bg-surface-bright text-[10px] font-bold tracking-widest rounded-sm border border-outline-variant/20">NEXT.JS</span>
+<span class="px-3 py-1 bg-surface-bright text-[10px] font-bold tracking-widest rounded-sm border border-outline-variant/20">SWIFT UI</span>
+<span class="px-3 py-1 bg-surface-bright text-[10px] font-bold tracking-widest rounded-sm border border-outline-variant/20">RUST</span>
+</div>
+</div>
+<!-- AI Automations -->
+<div class="md:col-span-4 bg-surface-container-high rounded-xl p-10 border border-outline-variant/10 hover:shadow-[0_0_40px_rgba(162,141,255,0.1)] transition-all duration-500">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="text-label text-xs tracking-[0.3em] text-on-surface-variant mb-4 font-bold">02 / FLOW</h3>
+<h2 class="text-2xl font-bold font-headline mb-4 text-on-surface">AI Automations.</h2>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">
+                        Seamlessly connect your tech stack with intelligent logic layers that eliminate manual friction.
+                    </p>
+<a class="text-primary text-xs font-bold tracking-widest flex items-center gap-2 group" href="#">
+                        EXPLORE FLOWS 
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- AI Agents (Large Display) -->
+<div class="md:col-span-12 relative overflow-hidden bg-surface-container-lowest rounded-xl p-12 border border-outline-variant/20 flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2">
+<h3 class="text-label text-xs tracking-[0.3em] text-secondary mb-4 font-bold">03 / COGNITION</h3>
+<h2 class="text-5xl font-black font-headline mb-8 text-on-surface leading-none">AI Agents for <br/>Enterprise.</h2>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 text-on-surface-variant font-body">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+                                Autonomous Customer Intelligence
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+                                24/7 Production Monitoring Agents
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+                                Large Language Model Fine-Tuning
+                            </li>
+</ul>
+<button class="bg-primary text-on-primary-fixed px-8 py-4 rounded-md font-headline font-bold text-sm tracking-widest">
+                            HIRE AN AGENT
+                        </button>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent z-10"></div>
+<img class="rounded-xl object-cover h-80 w-full opacity-60" data-alt="Futuristic robotic head with translucent outer shell revealing glowing digital circuitry and blue neon light elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwdLDwJg8gj21r3zksPKc2vG0Ar-Q5M2cT8lcoktYIZEwxAD2KOEnknuwdNpldHx52da0_qgojB9z1kgeke1P30Amum7q6ITJ69bWQFPmw6PqVyQOhvDEdcUFdajJ5GkAXeR5MniTvGx7ZLQgIEX2GbQ_vRKkwv4TR-AHJ8tktBY5uuLXhmEhq8-F9IL3id523Kor1Z82_m9zDNjAHKTPmMLY_m8qWwobcTD_96xepBdP6ypXUuXATEIpFTs2-f_CQEf_aufzWpw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats / Presentation Section -->
+<section class="py-24 bg-surface border-y border-outline-variant/10">
+<div class="px-8 lg:px-24 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div>
+<div class="text-5xl font-black font-headline text-primary mb-2">99.9%</div>
+<div class="text-[10px] tracking-[0.3em] text-on-surface-variant font-bold uppercase">Uptime Protocol</div>
+</div>
+<div>
+<div class="text-5xl font-black font-headline text-secondary mb-2">45k+</div>
+<div class="text-[10px] tracking-[0.3em] text-on-surface-variant font-bold uppercase">Tasks Automated</div>
+</div>
+<div>
+<div class="text-5xl font-black font-headline text-primary mb-2">2.4s</div>
+<div class="text-[10px] tracking-[0.3em] text-on-surface-variant font-bold uppercase">Avg Latency</div>
+</div>
+<div>
+<div class="text-5xl font-black font-headline text-secondary mb-2">12M</div>
+<div class="text-[10px] tracking-[0.3em] text-on-surface-variant font-bold uppercase">API Calls Daily</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8 lg:px-24">
+<div class="signature-gradient rounded-2xl p-16 text-center relative overflow-hidden group">
+<div class="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-all duration-700"></div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-black font-headline text-on-primary-fixed mb-8 tracking-tighter">READY TO UPGRADE <br/>YOUR REALITY?</h2>
+<p class="text-on-primary-fixed/80 font-body text-lg max-w-xl mx-auto mb-12">
+                        Step into the future of automated business operations. Schedule a system audit with our architects today.
+                    </p>
+<button class="bg-on-primary-fixed text-primary px-12 py-6 rounded-md font-headline font-black tracking-widest text-lg hover:scale-105 transition-transform duration-300">
+                        INITIATE CONTACT
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-8 border-t border-slate-800/50">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-['Space_Grotesk'] font-black text-cyan-400 text-xl">XPLORE</span>
+<p class="font-['Inter'] text-xs uppercase tracking-[0.2em] text-slate-500">© 2024 XPLORE AUTOMATION. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Inter'] text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-cyan-400 transition-all duration-500 hover:tracking-widest cursor-pointer" href="#">SYSTEM STATUS</a>
+<a class="font-['Inter'] text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-cyan-400 transition-all duration-500 hover:tracking-widest cursor-pointer" href="#">API DOCS</a>
+<a class="font-['Inter'] text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-cyan-400 transition-all duration-500 hover:tracking-widest cursor-pointer" href="#">PRIVACY PROTOCOL</a>
+<a class="font-['Inter'] text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-cyan-400 transition-all duration-500 hover:tracking-widest cursor-pointer" href="#">SECURITY</a>
+</div>
+</footer>
+</body></html>
