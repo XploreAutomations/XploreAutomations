@@ -133,22 +133,22 @@ function App() {
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
               <span className="text-[10px] font-bold tracking-[0.2em] text-on-surface-variant uppercase">System Active: V.4.0.2</span>
             </div>
-            <h1 className="text-6xl md:text-8xl font-black font-headline tracking-tighter leading-[0.9] mb-8 text-on-surface">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-black font-headline tracking-tighter leading-[1] md:leading-[0.9] mb-6 md:mb-8 text-on-surface">
               THE ORCHESTRATED <br />
               <span className="text-transparent bg-clip-text signature-gradient">INTELLIGENCE.</span>
             </h1>
-            <p className="text-lg md:text-xl text-on-surface-variant font-body max-w-4xl leading-relaxed mb-12">
+            <p className="text-base sm:text-lg md:text-xl text-on-surface-variant font-body max-w-4xl leading-relaxed mb-8 md:mb-12">
               At Xplore Automation, our vision is to transform how businesses operate by leveraging cutting-edge AI automation, intelligent agents, and high-performance digital platforms. We aim to simplify complex processes, enhance productivity, and deliver scalable web and mobile solutions tailored to every business need. From automation to marketing, we empower companies to grow faster, smarter, and more efficiently in the digital era.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
               <button
-                className="signature-gradient text-on-primary-fixed px-10 py-5 rounded-md font-headline font-bold tracking-widest hover:brightness-110 transition-all"
+                className="signature-gradient text-on-primary-fixed px-6 py-4 sm:px-10 sm:py-5 rounded-md font-headline font-bold tracking-widest hover:brightness-110 transition-all text-sm sm:text-base w-full sm:w-auto"
                 onClick={() => goToScreen("inquiry")}
               >
                 START YOUR PROJECT
               </button>
               <button
-                className="bg-surface-container-high text-primary border border-outline-variant/20 px-10 py-5 rounded-md font-headline font-bold tracking-widest hover:bg-surface-bright transition-all"
+                className="bg-surface-container-high text-primary border border-outline-variant/20 px-6 py-4 sm:px-10 sm:py-5 rounded-md font-headline font-bold tracking-widest hover:bg-surface-bright transition-all text-sm sm:text-base w-full sm:w-auto"
                 onClick={() => goToScreen("inquiry")}
               >
                 SEND REQUIREMENTS
@@ -157,30 +157,30 @@ function App() {
           </div>
         </section>
 
-        <section className="py-32 px-8 lg:px-24 bg-surface-container-low">
+        <section className="py-20 md:py-32 px-6 md:px-8 lg:px-24 bg-surface-container-low">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 max-w-7xl mx-auto">
-            <div className="md:col-span-8 group relative overflow-hidden bg-surface-container-highest rounded-xl p-10 border border-outline-variant/10 hover:border-primary/30 transition-all duration-500">
+            <div className="md:col-span-8 group relative overflow-hidden bg-surface-container-highest rounded-xl p-8 md:p-10 border border-outline-variant/10 hover:border-primary/30 transition-all duration-500">
               <h3 className="text-label text-xs tracking-[0.3em] text-primary mb-4 font-bold">01 / ARCHITECTURE</h3>
-              <h2 className="text-4xl font-bold font-headline mb-6 text-on-surface">Web Development.</h2>
-              <p className="text-on-surface-variant font-body max-w-md mb-8">Fast, scalable websites.</p>
+              <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4 md:mb-6 text-on-surface">Web Development.</h2>
+              <p className="text-on-surface-variant font-body max-w-md mb-6 md:mb-8">Fast, scalable websites.</p>
               <div className="flex gap-4">
                 <span className="px-3 py-1 bg-surface-bright text-[10px] font-bold tracking-widest rounded-sm border border-outline-variant/20">REACT</span>
                 <span className="px-3 py-1 bg-surface-bright text-[10px] font-bold tracking-widest rounded-sm border border-outline-variant/20">SCALABLE</span>
               </div>
             </div>
 
-            <div className="md:col-span-4 bg-surface-container-high rounded-xl p-10 border border-outline-variant/10 hover:shadow-[0_0_40px_rgba(162,141,255,0.1)] transition-all duration-500">
+            <div className="md:col-span-4 bg-surface-container-high rounded-xl p-8 md:p-10 border border-outline-variant/10 hover:shadow-[0_0_40px_rgba(162,141,255,0.1)] transition-all duration-500">
               <span className="material-symbols-outlined text-secondary text-4xl mb-6">auto_awesome</span>
               <h3 className="text-label text-xs tracking-[0.3em] text-on-surface-variant mb-4 font-bold">02 / FLOW</h3>
               <h2 className="text-2xl font-bold font-headline mb-4 text-on-surface">AI Automation.</h2>
               <p className="text-on-surface-variant font-body text-sm leading-relaxed mb-6">Automate repetitive business processes with reliable, scalable workflows.</p>
             </div>
 
-            <div className="md:col-span-12 relative overflow-hidden bg-surface-container-lowest rounded-xl p-12 border border-outline-variant/20 flex flex-col md:flex-row items-center gap-12">
+            <div className="md:col-span-12 relative overflow-hidden bg-surface-container-lowest rounded-xl p-8 md:p-12 border border-outline-variant/20 flex flex-col md:flex-row items-center gap-8 md:gap-12">
               <div className="w-full">
                 <h3 className="text-label text-xs tracking-[0.3em] text-secondary mb-4 font-bold">03 / COGNITION</h3>
-                <h2 className="text-5xl font-black font-headline mb-8 text-on-surface leading-none">Services.</h2>
-                <ul className="space-y-4 mb-10">
+                <h2 className="text-4xl md:text-5xl font-black font-headline mb-6 md:mb-8 text-on-surface leading-none">Services.</h2>
+                <ul className="space-y-4 mb-8 md:mb-10">
                   <li className="flex items-center gap-3 text-on-surface-variant font-body"><span className="material-symbols-outlined text-primary">check_circle</span>AI Automation - Automate repetitive business processes</li>
                   <li className="flex items-center gap-3 text-on-surface-variant font-body"><span className="material-symbols-outlined text-primary">check_circle</span>AI Agents - Intelligent assistants for workflows</li>
                   <li className="flex items-center gap-3 text-on-surface-variant font-body"><span className="material-symbols-outlined text-primary">check_circle</span>Web Development - Fast, scalable websites</li>
@@ -188,7 +188,7 @@ function App() {
                   <li className="flex items-center gap-3 text-on-surface-variant font-body"><span className="material-symbols-outlined text-primary">check_circle</span>Social Media Marketing - Growth-focused strategies</li>
                 </ul>
                 <button
-                  className="bg-primary text-on-primary-fixed px-8 py-4 rounded-md font-headline font-bold text-sm tracking-widest"
+                  className="bg-primary text-on-primary-fixed px-6 py-4 md:px-8 md:py-4 rounded-md font-headline font-bold text-sm tracking-widest w-full sm:w-auto"
                   onClick={() => goToScreen("inquiry")}
                 >
                   TELL US WHAT YOU NEED
@@ -198,40 +198,40 @@ function App() {
           </div>
           </section>
 
-          <section className="py-24 bg-surface border-y border-outline-variant/10">
-            <div className="px-8 lg:px-24 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+          <section className="py-16 md:py-24 bg-surface border-y border-outline-variant/10">
+            <div className="px-6 md:px-8 lg:px-24 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center items-start">
               <div>
-                <div className="text-5xl font-black font-headline text-primary mb-2">98.5%</div>
-                <div className="text-[10px] tracking-[0.3em] text-on-surface-variant font-bold uppercase">Uptime Protocol</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-black font-headline text-primary mb-2">98.5%</div>
+                <div className="text-[10px] tracking-[0.2em] md:tracking-[0.3em] text-on-surface-variant font-bold uppercase leading-tight">Uptime Protocol</div>
               </div>
               <div>
-                <div className="text-5xl font-black font-headline text-secondary mb-2">3.2k+</div>
-                <div className="text-[10px] tracking-[0.3em] text-on-surface-variant font-bold uppercase">Tasks Automated</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-black font-headline text-secondary mb-2">3.2k+</div>
+                <div className="text-[10px] tracking-[0.2em] md:tracking-[0.3em] text-on-surface-variant font-bold uppercase leading-tight">Tasks Automated</div>
               </div>
               <div>
-                <div className="text-5xl font-black font-headline text-primary mb-2">1.8s</div>
-                <div className="text-[10px] tracking-[0.3em] text-on-surface-variant font-bold uppercase">Avg Latency</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-black font-headline text-primary mb-2">1.8s</div>
+                <div className="text-[10px] tracking-[0.2em] md:tracking-[0.3em] text-on-surface-variant font-bold uppercase leading-tight">Avg Latency</div>
               </div>
               <div>
-                <div className="text-5xl font-black font-headline text-secondary mb-2">120k</div>
-                <div className="text-[10px] tracking-[0.3em] text-on-surface-variant font-bold uppercase">API Calls Daily</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-black font-headline text-secondary mb-2">120k</div>
+                <div className="text-[10px] tracking-[0.2em] md:tracking-[0.3em] text-on-surface-variant font-bold uppercase leading-tight">API Calls Daily</div>
               </div>
             </div>
           </section>
 
-          <section className="py-32 px-8 lg:px-24">
-            <div className="signature-gradient rounded-2xl p-16 text-center relative overflow-hidden group">
+          <section className="py-20 md:py-32 px-6 md:px-8 lg:px-24">
+            <div className="signature-gradient rounded-2xl p-8 md:p-16 text-center relative overflow-hidden group">
               <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-all duration-700"></div>
               <div className="relative z-10">
-                <h2 className="text-4xl md:text-6xl font-black font-headline text-on-primary-fixed mb-8 tracking-tighter">
-                  READY TO UPGRADE <br />
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-black font-headline text-on-primary-fixed mb-6 md:mb-8 tracking-tighter">
+                  READY TO UPGRADE <br className="hidden sm:block" />
                   YOUR REALITY?
                 </h2>
-                <p className="text-on-primary-fixed/80 font-body text-lg max-w-xl mx-auto mb-12">
+                <p className="text-on-primary-fixed/80 font-body text-base md:text-lg max-w-xl mx-auto mb-8 md:mb-12">
                   Tell us what you want to automate and we will design the right AI-powered workflow for your business.
                 </p>
                 <button
-                  className="bg-on-primary-fixed text-primary px-12 py-6 rounded-md font-headline font-black tracking-widest text-lg hover:scale-105 transition-transform duration-300"
+                  className="bg-on-primary-fixed text-primary px-8 py-4 md:px-12 md:py-6 rounded-md font-headline font-black tracking-widest text-sm md:text-lg hover:scale-105 transition-transform duration-300 w-full sm:w-auto"
                   onClick={() => goToScreen("inquiry")}
                 >
                   SEND YOUR REQUIREMENT
@@ -243,21 +243,21 @@ function App() {
       )}
 
       {screen === "inquiry" && (
-        <main className="min-h-screen pt-32 pb-20 relative flex flex-col items-center justify-center geometric-bg px-4 overflow-hidden">
-          <div className="w-full max-w-4xl text-left mb-12">
+        <main className="min-h-screen pt-28 pb-16 md:pt-32 md:pb-20 relative flex flex-col items-center justify-center geometric-bg px-4 sm:px-6 overflow-hidden">
+          <div className="w-full max-w-4xl text-left mb-10 md:mb-12 mt-6 md:mt-0">
             <div className="inline-flex items-center gap-2 mb-4">
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
               <span className="font-label text-[10px] uppercase tracking-[0.4em] text-primary-fixed-dim">Project Initiation Phase</span>
             </div>
-            <h2 className="font-headline text-5xl md:text-7xl font-bold leading-tight tracking-tighter text-on-background mb-6">
-              Start Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Journey.</span>
+            <h2 className="font-headline text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tighter text-on-background mb-4 md:mb-6">
+              Start Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary break-words">Journey.</span>
             </h2>
-            <p className="font-body text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            <p className="font-body text-base md:text-lg text-on-surface-variant max-w-2xl leading-relaxed">
               Xplore Automation provides AI Automation, AI Agents, Web & App Development, and Social Media Marketing services to help businesses scale and operate efficiently.
             </p>
           </div>
 
-          <section className="w-full max-w-4xl glass-panel border border-outline-variant/20 p-8 md:p-12 rounded-xl relative overflow-hidden">
+          <section className="w-full max-w-4xl glass-panel border border-outline-variant/20 p-6 sm:p-8 md:p-12 rounded-xl relative overflow-hidden">
             <form className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10" onSubmit={handleSubmit}>
               <div className="space-y-2">
                 <label className="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Name</label>
